@@ -1,0 +1,20 @@
+{
+    "name": "meredyk/facebook-bot-sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gustavo Meredyk",
+            "email": "gustavo@meredyk.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "phpunit/phpunit": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CraftingBot\\": "src"
+        }
+    }
+}
