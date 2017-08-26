@@ -23,7 +23,7 @@ class Text implements Message
             ],
             'message' => [
                 'text' => $messageText,
-                'metada' => 'DEVELOPER_DEFINED_METADATA'
+                'metadata' => 'DEVELOPER_DEFINED_METADATA'
             ]
         ];
 
