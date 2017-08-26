@@ -2,7 +2,7 @@
 
 namespace CraftingBot\Message;
 
-class Tex implements Message
+class Image implements Message
 {
 
     /**
@@ -22,11 +22,14 @@ class Tex implements Message
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $messageText,
-                'metada' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'image',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ]
             ]
         ];
 
     }
-
 }
