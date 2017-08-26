@@ -3,7 +3,6 @@
 namespace CraftingBot\Message;
 
 use PHPUnit\Framework\TestCase;
-use CraftingBot\Message\Text;
 
 class TextTest extends TestCase {
 

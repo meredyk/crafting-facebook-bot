@@ -2,7 +2,7 @@
 
 namespace CraftingBot\Message;
 
-class Tex implements Message
+class Text implements Message
 {
 
     /**
