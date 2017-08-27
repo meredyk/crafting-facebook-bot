@@ -14,7 +14,7 @@ class TextTest extends TestCase {
             ],
             'message' => [
                 'text' => 'Oi',
-                'metada' => 'DEVELOPER_DEFINED_METADATA'
+                'metadata' => 'DEVELOPER_DEFINED_METADATA'
             ]
         ];
         $this->assertEquals($actual, $expected);
