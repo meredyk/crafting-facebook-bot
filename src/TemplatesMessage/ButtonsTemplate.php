@@ -3,9 +3,8 @@
 namespace CraftingBot\TemplatesMessage;
 
 use CraftingBot\Element\ElementInterface;
-use CraftingBot\Message\Message;
 
-class ButtonsTemplate implements Message
+class ButtonsTemplate implements TemplateInterface
 {
     protected $buttons = [];
     protected $recipientId;
