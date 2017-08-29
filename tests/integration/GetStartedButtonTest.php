@@ -10,10 +10,22 @@ class GetStartedButtonTest extends TestCase
     public function testAddGetStartedButton()
     {
         $data = (new GetStartedButton())->add('iniciar');
-        $callSendApi = new CallSendApi('EAATq8fBqXFQBADUcwyDZALhCi6tPZAkZA9NY2ZAzIVcWZCAbpVQEMjXaJowNFfwRXBSBsv1MzIFddo7BTg9L5AuSby4ZAXR3zhuhpiKI7E9YWYVMdNaX4ZBET5mnQmiWBiiZAGiL9qFxqlpxLvD54YRDkxiYAiIUcJBmwqZBy9TRPBgZDZD');
+        $callSendApi = new CallSendApi('TOKEN');
 
         $result = $callSendApi->make($data, CallSendApi::URL_PROFILE);
 
         $this->assertTrue(is_string($result));
     }
+
+    public function testRemoveGetStartedButton()
+    {
+        $data = (new GetStartedButton())->remove();
+        $callSendApi = new CallSendApi('TOKEN');
+
+        $result = $callSendApi->make($data, CallSendApi::URL_PROFILE, 'DELETE');
+
+        $this->assertTrue(is_string($result));
+    }
+
+
 }
